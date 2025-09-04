@@ -1066,7 +1066,6 @@ def display_results():
                 <div><strong>Diet Type:</strong> {user_data['diet_type']}</div>
                 <div><strong>Meals/Day:</strong> {user_data['meals_per_day']}</div>
                 <div><strong>Sleep:</strong> {user_data.get('sleep_time', 'N/A')} - {user_data.get('wake_time', 'N/A')}</div>
-                <div><strong>Sleep Duration:</strong> {user_data['sleep_duration']} hours</div>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -1169,3 +1168,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+

@@ -13,7 +13,7 @@ st.set_page_config(
     page_title="AI Diet Plan Generator",
     page_icon="🥗",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # Custom CSS for professional styling
@@ -1167,4 +1167,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()

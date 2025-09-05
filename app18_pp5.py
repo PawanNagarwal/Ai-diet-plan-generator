@@ -430,8 +430,13 @@ def load_css():
     [data-testid="stToolbar"] {
         display: none !important;
     }
-    
+
+    /* Hide the "Manage app" button */
+    [data-testid="manage-app-button"] {
+        display: none !important;
+    }
     </style>
+    
     """, unsafe_allow_html=True)
 
 
@@ -1185,6 +1190,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

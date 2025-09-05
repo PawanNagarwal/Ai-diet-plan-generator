@@ -431,19 +431,6 @@ def load_css():
         display: none !important;
     }
     
-    /* Hide main menu and footer */
-    #MainMenu {
-        visibility: hidden;
-    }
-    
-    footer {
-        visibility: hidden;
-    }
-    
-    header {
-        visibility: hidden;
-    }
-    
     </style>
     """, unsafe_allow_html=True)
 
@@ -1198,5 +1185,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

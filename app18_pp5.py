@@ -408,11 +408,40 @@ def load_css():
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     
-    /* ... all your existing CSS ... */
+    .main {
+        font-family: 'Inter', sans-serif;
+    }
     
-    /* Hide only the toolbar with GitHub fork icon */
+    /* ... all your existing CSS styles ... */
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .main-header h1 { font-size: 2rem !important; }
+        .loading-title { font-size: 2rem; }
+        .action-buttons { flex-direction: column; }
+        .spinning-utensils { gap: 1.5rem; }
+        .utensil { font-size: 2rem; }
+        .meal-footer { flex-wrap: wrap; gap: 1rem; }
+        .nutrient-item { flex-basis: 40%; }
+        .meal-header { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+    
+    /* Hide Streamlit toolbar including GitHub fork icon */
     [data-testid="stToolbar"] {
         display: none !important;
+    }
+    
+    /* Hide main menu and footer */
+    #MainMenu {
+        visibility: hidden;
+    }
+    
+    footer {
+        visibility: hidden;
+    }
+    
+    header {
+        visibility: hidden;
     }
     
     </style>
@@ -1169,4 +1198,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

@@ -431,8 +431,22 @@ def load_css():
         display: none !important;
     }
 
-    /* Hide the "Manage app" button */
-    [data-testid="manage-app-button"] {
+    * Alternative selectors for Manage app button (try these if the above doesn't work) */
+    .manage-app {
+        display: none !important;
+    }
+    
+    [data-testid="stFloatingActionButton"] {
+        display: none !important;
+    }
+    
+    .stFloatingActionButton {
+        display: none !important;
+    }
+    
+    /* Hide all floating action buttons */
+    div[data-testid*="FloatingActionButton"],
+    div[class*="FloatingActionButton"] {
         display: none !important;
     }
     </style>
@@ -1190,6 +1204,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

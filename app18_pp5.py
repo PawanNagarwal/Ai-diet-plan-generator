@@ -405,6 +405,16 @@ def load_css():
         .nutrient-item { flex-basis: 40%; }
         .meal-header { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    /* ... all your existing CSS ... */
+    
+    /* Hide only the toolbar with GitHub fork icon */
+    [data-testid="stToolbar"] {
+        display: none !important;
+    }
+    
     </style>
     """, unsafe_allow_html=True)
 
@@ -1159,3 +1169,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
